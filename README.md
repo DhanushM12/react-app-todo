@@ -1,3 +1,27 @@
+## Folder structure
+
+```
+todolist
+├─ .git
+├─ .gitignore
+├─ package-lock.json
+├─ package.json
+├─ public
+│  ├─ favicon.ico
+│  ├─ index.html
+│  ├─ logo192.png
+│  ├─ logo512.png
+│  ├─ manifest.json
+│  └─ robots.txt
+├─ README.md
+└─ src
+   ├─ App.css
+   ├─ App.js
+   ├─ index.css
+   └─ index.js
+
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
