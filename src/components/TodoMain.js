@@ -13,6 +13,15 @@ function TodoMain() {
     })
     setTask("")
   }
+
+  const deleteItem = (id) => {
+    console.log(id, 'to be deleted')
+    setTaskArray((prevTasks) => {
+      return prevTasks.filter((arrele, index) => {
+        return index != id;
+      })
+    })
+  }
   return (
     <div>
       <h1>My Todo List</h1> 
@@ -20,7 +29,7 @@ function TodoMain() {
       <input type="text" value={task} placeholder="Enter a task" onChange={onTaskChange} />
       <button onClick={addTask}>Add</button>
       <ol> {taskArray.map((val, index) => {
-        return <TodoList key={index} text={val}/>
+        return <TodoList key={index} id={index} text={val} onSelect={deleteItem}/>
       })}</ol>
     </div>
   )
